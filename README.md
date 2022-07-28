@@ -1,1 +1,1 @@
-# redm_sell_items_qbr
+# Redm Sell items script [ QBR ]
