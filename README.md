@@ -8,6 +8,9 @@ qbr-menu
 qbr-input
 
 ![image](https://user-images.githubusercontent.com/107623238/182255543-8955f199-1d35-4bcc-b1a6-9e7bc1d7a63e.png)
+![image](https://user-images.githubusercontent.com/107623238/182256469-9a31d385-65e6-4c4b-9a0d-531d2326a25b.png)
+![image](https://user-images.githubusercontent.com/107623238/182256487-bc3477e2-61c2-43c2-b4df-dfd9d095ef9d.png)
+
 
 
 # Installation
