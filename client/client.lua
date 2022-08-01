@@ -13,38 +13,6 @@ Citizen.CreateThread(function()
 end)
 
 
--- fishvendor menu
-RegisterNetEvent('pls_meatsell:client:menu', function(data)
-    exports['qbr-menu']:openMenu({
-        {
-            header = "| Výkup masa |",
-            isMenuHeader = true,
-        },
-        {
-            header = "Prodat syrové maso",
-            txt = "Dám ti 8 $ za syrové maso",
-            params = {
-                event = 'pls_meatsell:server:sellrawmeat',
-				isServer = true,
-            }
-        },
-        {
-            header = "Prodat rybí maso",
-            txt = "Dám ti 7.5 $ za rybí maso",
-            params = {
-                event = 'pls_meatsell:server:sellfishmeat',
-				isServer = true,
-            }
-        },
-        {
-            header = "Zavřít menu",
-            txt = '',
-            params = {
-                event = 'qbr-menu:closeMenu',
-            }
-        },
-    })
-end)
 
 
 RegisterNetEvent('pls_vykup:openmenu') 
@@ -57,7 +25,7 @@ AddEventHandler('pls_vykup:openmenu', function(menuid)
         },
     }
     local closemenu = {
-        header = "Zavřít menu",
+        header = "Close menu",
         txt = '', 
         params = {
             event = 'qbr-menu:closeMenu',
@@ -87,7 +55,7 @@ AddEventHandler('pls_vykup:client:sellcount', function(arguments)
     local menuid = arguments[1]
     local data = arguments[2]
     local inputdata = exports['qbr-input']:ShowInput({
-        header = "Zadejte počet 1ks / "..data.price.." $",
+        header = "Enter the number of  1 / "..data.price.." $",
 		inputs = {
             {
                 text = data.description,
