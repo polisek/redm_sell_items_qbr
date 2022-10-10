@@ -7,6 +7,7 @@ function modelrequest( model )
     end)
 end
 
+
 AddEventHandler("onResourceStop",function(resourceName)
     for k, v in pairs(Config.VykupShops) do
         DeleteEntity(npc[k])
@@ -46,4 +47,3 @@ Citizen.CreateThread(function()
         end
     end
 end)
-
