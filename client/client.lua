@@ -14,6 +14,8 @@ end)
 
 
 
+
+
 RegisterNetEvent('pls_vykup:openmenu') 
 AddEventHandler('pls_vykup:openmenu', function(menuid)
     print(menuid)
