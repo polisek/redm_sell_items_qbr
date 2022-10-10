@@ -14,7 +14,6 @@ end)
 
 
 
-
 RegisterNetEvent('pls_vykup:openmenu') 
 AddEventHandler('pls_vykup:openmenu', function(menuid)
     print(menuid)
@@ -55,7 +54,7 @@ AddEventHandler('pls_vykup:client:sellcount', function(arguments)
     local menuid = arguments[1]
     local data = arguments[2]
     local inputdata = exports['qbr-input']:ShowInput({
-        header = "Enter the number of  1 / "..data.price.." $",
+        header = "Enter the number of 1pc / "..data.price.." $",
 		inputs = {
             {
                 text = data.description,
