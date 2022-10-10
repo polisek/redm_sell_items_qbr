@@ -26,3 +26,4 @@ AddEventHandler('pls_vykup:server:sellitem', function(amount,data)
         	TriggerClientEvent('QBCore:Notify', src, 9, 'Must not be a negative value.', 5000, 0, 'mp_lobby_textures', 'cross', 'COLOR_WHITE')
     	end
 end)
+
